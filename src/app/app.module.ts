@@ -11,6 +11,11 @@ import { BreadcumbComponent } from './shared/breadcumb/breadcumb.component';
 import { HeroComponent } from './shared/hero/hero.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { ShopListComponent } from './components/shop-list/shop-list.component';
+import { ShopSidebarComponent } from './components/shop-sidebar/shop-sidebar.component';
+import { ShopResultsComponent } from './components/shop-results/shop-results.component';
+import { ShopResultItemComponent } from './components/shop-result-item/shop-result-item.component';
+import { ShopDiscountSliderComponent } from './components/shop-discount-slider/shop-discount-slider.component';
+import { ShopDiscountSliderItemComponent } from './components/shop-discount-slider-item/shop-discount-slider-item.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,12 @@ import { ShopListComponent } from './components/shop-list/shop-list.component';
     BreadcumbComponent,
     HeroComponent,
     ShopComponent,
-    ShopListComponent
+    ShopListComponent,
+    ShopSidebarComponent,
+    ShopResultsComponent,
+    ShopResultItemComponent,
+    ShopDiscountSliderComponent,
+    ShopDiscountSliderItemComponent
   ],
   imports: [
     BrowserModule,

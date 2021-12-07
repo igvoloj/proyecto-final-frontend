@@ -16,29 +16,46 @@ import { ShopResultsComponent } from './components/shop-results/shop-results.com
 import { ShopResultItemComponent } from './components/shop-result-item/shop-result-item.component';
 import { ShopDiscountSliderComponent } from './components/shop-discount-slider/shop-discount-slider.component';
 import { ShopDiscountSliderItemComponent } from './components/shop-discount-slider-item/shop-discount-slider-item.component';
+import { ShopResultItemDetailsComponent } from './components/shop-result-item-details/shop-result-item-details.component';
+import { LoaderComponent } from './shared/loader/loader.component';
+import { RouterModule, Routes } from '@angular/router';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+
+const routes: Routes = [
+	{ path: '', component: HomeComponent },
+	{ path: 'contact', component: ContactComponent },
+	{ path: 'shop', component: ShopComponent },
+	{ path: '404', component: NotFoundComponent },
+	{ path: '**', redirectTo: '/404' }
+	/* { path: 'shop/:id', component: ShopListComponent }, */
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    NavComponent,
-    FooterComponent,
-    ContactComponent,
-    BreadcumbComponent,
-    HeroComponent,
-    ShopComponent,
-    ShopListComponent,
-    ShopSidebarComponent,
-    ShopResultsComponent,
-    ShopResultItemComponent,
-    ShopDiscountSliderComponent,
-    ShopDiscountSliderItemComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HomeComponent,
+		NavComponent,
+		FooterComponent,
+		ContactComponent,
+		BreadcumbComponent,
+		HeroComponent,
+		ShopComponent,
+		ShopListComponent,
+		ShopSidebarComponent,
+		ShopResultsComponent,
+		ShopResultItemComponent,
+		ShopDiscountSliderComponent,
+		ShopDiscountSliderItemComponent,
+		ShopResultItemDetailsComponent,
+		LoaderComponent,
+  NotFoundComponent
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		RouterModule.forRoot(routes)
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

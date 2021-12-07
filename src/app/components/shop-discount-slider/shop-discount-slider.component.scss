@@ -1,0 +1,44 @@
+.product__discount {
+	padding-bottom: 50px;
+}
+
+.product__discount__title {
+	text-align: left;
+	margin-bottom: 65px;
+}
+
+.product__discount__title h2 {
+	display: inline-block;
+}
+
+.product__discount__title h2:after {
+	margin: 0;
+	width: 100%;
+}
+/*slider*/
+
+.product__discount__slider .col-lg-4 {
+	max-width: 100%;
+}
+
+.product__discount__slider.owl-carousel .owl-dots {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.product__discount__slider.owl-carousel .owl-dots button {
+	height: 12px;
+	width: 12px;
+	border: 1px solid #b2b2b2;
+	border-radius: 50%;
+	margin-right: 12px;
+}
+
+.product__discount__slider.owl-carousel .owl-dots button.active {
+	background: #707070;
+	border-color: #6f6f6f;
+}
+
+.product__discount__slider.owl-carousel .owl-dots button:last-child {
+	margin-right: 0;
+}

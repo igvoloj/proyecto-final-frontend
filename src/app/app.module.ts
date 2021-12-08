@@ -25,6 +25,7 @@ const routes: Routes = [
 	{ path: '', component: HomeComponent },
 	{ path: 'contact', component: ContactComponent },
 	{ path: 'shop', component: ShopComponent },
+	{ path: 'details/:id', component: ShopResultItemDetailsComponent },
 	{ path: '404', component: NotFoundComponent },
 	{ path: '**', redirectTo: '/404' }
 	/* { path: 'shop/:id', component: ShopListComponent }, */

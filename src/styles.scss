@@ -32,7 +32,7 @@
 1.-elegant-icons
 2.-nice-select
 3.jquery-ui
-4.-owl-carousel
+4.-carousel
 5.-slicknav
 */
 
@@ -192,8 +192,6 @@ ol {
 	border: none;
 }
 
-
-
 /*---------------------
   Form BLog
 -----------------------*/
@@ -210,8 +208,6 @@ ol {
 .from-blog__title {
 	margin-bottom: 70px;
 }
-
-
 
 /*---------------------
   Shop Grid
@@ -364,12 +360,12 @@ ol {
 	max-width: 100%;
 }
 
-.product__discount__slider.owl-carousel .owl-dots {
+.product__discount__slider.carousel .owl-dots {
 	text-align: center;
 	margin-top: 30px;
 }
 
-.product__discount__slider.owl-carousel .owl-dots button {
+.product__discount__slider.carousel .owl-dots button {
 	height: 12px;
 	width: 12px;
 	border: 1px solid #b2b2b2;
@@ -377,15 +373,14 @@ ol {
 	margin-right: 12px;
 }
 
-.product__discount__slider.owl-carousel .owl-dots button.active {
+.product__discount__slider.carousel .owl-dots button.active {
 	background: #707070;
 	border-color: #6f6f6f;
 }
 
-.product__discount__slider.owl-carousel .owl-dots button:last-child {
+.product__discount__slider.carousel .owl-dots button:last-child {
 	margin-right: 0;
 } */
-
 
 .product__item {
 	margin-bottom: 50px;
@@ -536,7 +531,7 @@ ol {
 	cursor: pointer;
 }
 
-.product__details__pic__slider.owl-carousel .owl-item img {
+.product__details__pic__slider.carousel .owl-item img {
 	width: auto;
 }
 
@@ -1482,7 +1477,6 @@ ol {
 	margin-right: 0;
 }
 
-
 /*---------------------
   Contact
 -----------------------*/
@@ -1663,7 +1657,7 @@ ol {
 	.hero__categories ul {
 		padding-left: 20px;
 	}
-	.latest-product__slider.owl-carousel .owl-nav {
+	.latest-product__slider.carousel .owl-nav {
 		right: 0;
 	}
 	.product__details__tab .nav-tabs:before {
@@ -1686,10 +1680,10 @@ ol {
 	.hero__search__form {
 		width: 485px;
 	}
-	.categories__slider.owl-carousel .owl-nav button {
+	.categories__slider.carousel .owl-nav button {
 		left: -20px;
 	}
-	.categories__slider.owl-carousel .owl-nav button.owl-next {
+	.categories__slider.carousel .owl-nav button.owl-next {
 		right: -20px;
 	}
 	.filter__sort .nice-select {
@@ -1922,17 +1916,17 @@ ol {
 		float: left;
 		margin-top: 30px;
 	}
-	.categories__slider.owl-carousel .owl-nav {
+	.categories__slider.carousel .owl-nav {
 		text-align: center;
 		margin-top: 40px;
 	}
-	.categories__slider.owl-carousel .owl-nav button {
+	.categories__slider.carousel .owl-nav button {
 		position: relative;
 		left: 0;
 		top: 0;
 		-webkit-transform: translateY(0);
 	}
-	.categories__slider.owl-carousel .owl-nav button.owl-next {
+	.categories__slider.carousel .owl-nav button.owl-next {
 		right: -10px;
 	}
 	.footer__copyright {
@@ -5479,23 +5473,23 @@ a.ui-button:active,
  * Copyright 2013-2018 David Deutsch
  * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
  */
-.owl-carousel,
-.owl-carousel .owl-item {
+.carousel,
+.carousel .owl-item {
 	-webkit-tap-highlight-color: transparent;
 	position: relative;
 }
-.owl-carousel {
+.carousel {
 	display: none;
 	width: 100%;
 	z-index: 1;
 }
-.owl-carousel .owl-stage {
+.carousel .owl-stage {
 	position: relative;
 	-ms-touch-action: pan-Y;
 	touch-action: manipulation;
 	-moz-backface-visibility: hidden;
 }
-.owl-carousel .owl-stage:after {
+.carousel .owl-stage:after {
 	content: ".";
 	display: block;
 	clear: both;
@@ -5503,13 +5497,13 @@ a.ui-button:active,
 	line-height: 0;
 	height: 0;
 }
-.owl-carousel .owl-stage-outer {
+.carousel .owl-stage-outer {
 	position: relative;
 	overflow: hidden;
 	-webkit-transform: translate3d(0, 0, 0);
 }
-.owl-carousel .owl-item,
-.owl-carousel .owl-wrapper {
+.carousel .owl-item,
+.carousel .owl-wrapper {
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	-ms-backface-visibility: hidden;
@@ -5517,27 +5511,27 @@ a.ui-button:active,
 	-moz-transform: translate3d(0, 0, 0);
 	-ms-transform: translate3d(0, 0, 0);
 }
-.owl-carousel .owl-item {
+.carousel .owl-item {
 	min-height: 1px;
 	float: left;
 	-webkit-backface-visibility: hidden;
 	-webkit-touch-callout: none;
 }
-.owl-carousel .owl-item img {
+.carousel .owl-item img {
 	display: block;
 	width: 100%;
 }
-.owl-carousel .owl-dots.disabled,
-.owl-carousel .owl-nav.disabled {
+.carousel .owl-dots.disabled,
+.carousel .owl-nav.disabled {
 	display: none;
 }
-.no-js .owl-carousel,
-.owl-carousel.owl-loaded {
+.no-js .carousel,
+.carousel.owl-loaded {
 	display: block;
 }
-.owl-carousel .owl-dot,
-.owl-carousel .owl-nav .owl-next,
-.owl-carousel .owl-nav .owl-prev {
+.carousel .owl-dot,
+.carousel .owl-nav .owl-next,
+.carousel .owl-nav .owl-prev {
 	cursor: pointer;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -5545,26 +5539,26 @@ a.ui-button:active,
 	-ms-user-select: none;
 	user-select: none;
 }
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot {
+.carousel .owl-nav button.owl-next,
+.carousel .owl-nav button.owl-prev,
+.carousel button.owl-dot {
 	background: 0 0;
 	color: inherit;
 	border: none;
 	padding: 0 !important;
 	font: inherit;
 }
-.owl-carousel.owl-loading {
+.carousel.owl-loading {
 	opacity: 0;
 	display: block;
 }
-.owl-carousel.owl-hidden {
+.carousel.owl-hidden {
 	opacity: 0;
 }
-.owl-carousel.owl-refresh .owl-item {
+.carousel.owl-refresh .owl-item {
 	visibility: hidden;
 }
-.owl-carousel.owl-drag .owl-item {
+.carousel.owl-drag .owl-item {
 	-ms-touch-action: pan-y;
 	touch-action: pan-y;
 	-webkit-user-select: none;
@@ -5572,27 +5566,27 @@ a.ui-button:active,
 	-ms-user-select: none;
 	user-select: none;
 }
-.owl-carousel.owl-grab {
+.carousel.owl-grab {
 	cursor: move;
 	cursor: grab;
 }
-.owl-carousel.owl-rtl {
+.carousel.owl-rtl {
 	direction: rtl;
 }
-.owl-carousel.owl-rtl .owl-item {
+.carousel.owl-rtl .owl-item {
 	float: right;
 }
-.owl-carousel .animated {
+.carousel .animated {
 	animation-duration: 1s;
 	animation-fill-mode: both;
 }
-.owl-carousel .owl-animated-in {
+.carousel .owl-animated-in {
 	z-index: 0;
 }
-.owl-carousel .owl-animated-out {
+.carousel .owl-animated-out {
 	z-index: 1;
 }
-.owl-carousel .fadeOut {
+.carousel .fadeOut {
 	animation-name: fadeOut;
 }
 @keyframes fadeOut {
@@ -5606,15 +5600,15 @@ a.ui-button:active,
 .owl-height {
 	transition: height 0.5s ease-in-out;
 }
-.owl-carousel .owl-item .owl-lazy {
+.carousel .owl-item .owl-lazy {
 	opacity: 0;
 	transition: opacity 0.4s ease;
 }
-.owl-carousel .owl-item .owl-lazy:not([src]),
-.owl-carousel .owl-item .owl-lazy[src^=""] {
+.carousel .owl-item .owl-lazy:not([src]),
+.carousel .owl-item .owl-lazy[src^=""] {
 	max-height: 0;
 }
-.owl-carousel .owl-item img.owl-lazy {
+.carousel .owl-item img.owl-lazy {
 	transform-style: preserve-3d;
 }
 /*slicknav*/

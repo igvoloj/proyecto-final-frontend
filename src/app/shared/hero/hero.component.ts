@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { CategoriesService } from 'src/app/services/categories.service';
 
 @Component({
-  selector: 'app-hero',
-  templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.scss']
+	selector: 'app-hero',
+	templateUrl: './hero.component.html',
+	styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent implements OnInit {
+	departaments: string[] = [];
 
-  constructor() { }
+	constructor(private servicioCategorias: CategoriesService) {
+		this.departaments = this.servicioCategorias.getCategories();
+	}
 
-  ngOnInit(): void {
-  }
+	ngOnInit(): void {
+	}
 
 }

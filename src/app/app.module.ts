@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShopDiscountSliderItemComponent } from './components/shop-discount-slider-item/shop-discount-slider-item.component';
@@ -18,17 +17,11 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeroComponent } from './shared/hero/hero.component';
 import { LoaderComponent } from './shared/loader/loader.component';
 import { NavComponent } from './shared/nav/nav.component';
-
-
-const routes: Routes = [
-	{ path: '', component: HomeComponent },
-	{ path: 'contact', component: ContactComponent },
-	{ path: 'shop', component: ShopComponent },
-	{ path: 'details/:id', component: ShopResultItemDetailsComponent },
-	{ path: '404', component: NotFoundComponent },
-	{ path: '**', redirectTo: '/404' }
-	/* { path: 'shop/:id', component: ShopListComponent }, */
-];
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { LogInComponent } from './pages/log-in/log-in.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { UserInfoComponent } from './pages/user-info/user-info.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 @NgModule({
 	declarations: [
@@ -47,15 +40,19 @@ const routes: Routes = [
 		ShopDiscountSliderItemComponent,
 		ShopResultItemDetailsComponent,
 		LoaderComponent,
-		NotFoundComponent
+		NotFoundComponent,
+		SignUpComponent,
+		LogInComponent,
+		CheckoutComponent,
+		UserInfoComponent,
+  CartComponent
 	],
 	imports: [
 		BrowserModule,
-		AppRoutingModule,
-		RouterModule.forRoot(routes)
+		AppRoutingModule
 	],
 	providers: [],
 	bootstrap: [AppComponent],
-	
+
 })
 export class AppModule { }

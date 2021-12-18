@@ -1,4 +1,4 @@
-<app-nav></app-nav>
-<app-hero></app-hero>
+<app-nav [isLogged]="isLogged" [email]="contactData.email" [socialLinks]="socialLinks"></app-nav>
+<app-hero [phone]="contactData.phone"></app-hero>
 <router-outlet></router-outlet>
-<app-footer></app-footer>
+<app-footer [contactData]="contactData" [socialLinks]="socialLinks"></app-footer>

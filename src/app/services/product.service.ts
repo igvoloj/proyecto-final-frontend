@@ -9,7 +9,9 @@ export class ProductService {
 	constructor() {
 		this.products.push(
 			{ id: 1, name: 'Producto 1', img: '/assets/img/product/product-1.jpg', price: 100 },
-			{ id: 2, name: 'Producto 2', img: '/assets/img/product/product-1.jpg', price: 100 });
+			{ id: 2, name: 'Producto 2', img: '/assets/img/product/product-2.jpg', price: 100 },
+			{ id: 3, name: 'Producto 3', img: '/assets/img/product/product-3.jpg', price: 100 },
+			{ id: 4, name: 'Producto 4', img: '/assets/img/product/product-4.jpg', price: 100 });
 	}
 	getProducts(): Product[] {
 		return this.products;

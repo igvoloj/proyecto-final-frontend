@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { SocialLink } from 'src/app/core/models/social-link';
 
 @Component({
 	selector: 'app-nav',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-	isLogged: boolean = true;
+	@Input() isLogged: boolean = false;
+	@Input() email: string = "";
+	@Input() socialLinks: SocialLink[] = [{ name: '', link: '', icon: '' }];
 	userName: string = "Juan";
 	navItems = [
 		{ text: "Home", link: "/" },

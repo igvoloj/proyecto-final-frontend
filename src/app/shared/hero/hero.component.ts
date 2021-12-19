@@ -7,11 +7,11 @@ import { CategoriesService } from 'src/app/services/categories.service';
 	styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent implements OnInit {
-	@Input() phone:string = '+34 922 022 022';
-	departaments: string[] = [];
+	@Input() phone: string = '';
+	departaments: string[];
 
 	constructor(private servicioCategorias: CategoriesService) {
-		this.departaments = this.servicioCategorias.getCategories();
+		this.departaments = this.servicioCategorias.getCategoriesNames();
 	}
 
 	ngOnInit(): void {

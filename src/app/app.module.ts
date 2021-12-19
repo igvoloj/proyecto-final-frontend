@@ -23,6 +23,11 @@ import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { UserInfoComponent } from './pages/user-info/user-info.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { FromBlogComponent } from './components/from-blog/from-blog.component';
+import { CaruselProductLargeComponent } from './components/carusel-product-large/carusel-product-large.component';
+import { SearcherComponent } from './components/searcher/searcher.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { CarruselProductShortComponent } from './components/carrusel-product-short/carrusel-product-short.component';
+import { CarruselCategoriesComponent } from './components/carrusel-categories/carrusel-categories.component';
 
 @NgModule({
 	declarations: [
@@ -47,7 +52,12 @@ import { FromBlogComponent } from './components/from-blog/from-blog.component';
 		CheckoutComponent,
 		UserInfoComponent,
   CartComponent,
-  FromBlogComponent
+  FromBlogComponent,
+  CaruselProductLargeComponent,
+  SearcherComponent,
+  BannerComponent,
+  CarruselProductShortComponent,
+  CarruselCategoriesComponent
 	],
 	imports: [
 		BrowserModule,

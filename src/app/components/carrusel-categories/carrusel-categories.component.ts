@@ -17,7 +17,6 @@ export class CarruselCategoriesComponent implements OnInit, Carousel {
 	autoPlay: boolean;
 	dataSource: any[];
 	delay: number;
-	disabled: boolean;
 	disableItemClick: boolean;
 	displayMode: string;
 	hideArrows: boolean;
@@ -27,8 +26,6 @@ export class CarruselCategoriesComponent implements OnInit, Carousel {
 	keyboard: boolean;
 	loop: boolean;
 	readonly: boolean;
-	slideShow: boolean;
-	swipe: boolean;
 	wheel: boolean;
 
 	constructor(private servicioCategorias: CategoriesService) {
@@ -37,7 +34,6 @@ export class CarruselCategoriesComponent implements OnInit, Carousel {
 		this.animation = 'none';
 		this.autoPlay = true;
 		this.delay = 3000;
-		this.disabled = false;
 		this.disableItemClick = false;
 		this.displayMode = 'default';
 		this.hideArrows = false;
@@ -53,10 +49,9 @@ export class CarruselCategoriesComponent implements OnInit, Carousel {
 		this.keyboard = true;
 		this.loop = true;
 		this.readonly = false;
-		this.slideShow = false;
-		this.swipe = true;
+
 		this.wheel = true;
-		this.play();
+		/* this.play(); */
 	}
 
 	next(): void {
@@ -71,6 +66,8 @@ export class CarruselCategoriesComponent implements OnInit, Carousel {
 	}
 	play(): void {
 		/* const carouselItems = this.getCarouselItems(); */
+		throw new Error('Method not implemented.');
+
 		for (let i = 0; i < 100; i++) {
 			setTimeout(() => this.next(), this.interval);
 		}

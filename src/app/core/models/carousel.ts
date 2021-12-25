@@ -12,7 +12,6 @@ export interface Carousel {
 	 */
 	dataSource: any[];
 	delay: number;
-	disabled: boolean;
 	disableItemClick: boolean;
 	/**
 	 *enum ['default', 'Multiple', 'Threed']
@@ -28,14 +27,7 @@ export interface Carousel {
 	keyboard: boolean;
 	loop: boolean;
 	readonly: boolean;
-	/**
-	 * When slideShow property is set to true, the carousel changes the active slide automatically with a delay set in interval property.
-	 */
-	slideShow: boolean;
-	/**
-	 * Enables or disables switching to the previous/next slide via swiping left/right. By default swiping is disabled.
-	 */
-	swipe: boolean;
+
 	/**
 	 * Activates/deactivates slide navigation via mouse wheel. By default it's disabled.
 	 */

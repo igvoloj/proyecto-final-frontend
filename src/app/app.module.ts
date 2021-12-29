@@ -29,7 +29,6 @@ import { BannerComponent } from './components/banner/banner.component';
 import { CarruselProductShortComponent } from './components/carrusel-product-short/carrusel-product-short.component';
 import { CarruselCategoriesComponent } from './components/carrusel-categories/carrusel-categories.component';
 import { CarruselProductGroupComponent } from './components/carrusel-product-group/carrusel-product-group.component';
-
 @NgModule({
 	declarations: [
 		AppComponent,
